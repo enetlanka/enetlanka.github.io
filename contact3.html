@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>eNet Lanka - Sri Lanka Email Marketing Solution</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="keywords" content="email marketing, sri lanka email marketing, emarketing, e-marketing,sri lanka emarketing, 									
+e-mail,Advertising,e Marketing,Bulk Mail, Cheap email, Lanka, Promotions,									
+Lanka emarketing, Email Marketing, Sri Lanka, Company,									
+email marketing sri lanka, email advertising sri lanka, eNet Lanka, e marketing sri lanka, business promotions sri lanka, e promotions sri lanka, 									
+e advertisement sri lanka, e mail marketing company sri lanka, email ad sri lanka,									
+eads sri lanka,emarketing, Electronic Advertiser, Advertising, Market Research, Marketing in Sri Lanka, Email Campaigns, 									
+email marketing, mass mailing, low cost advertising sri lanka, cost effective publicity, professional eadvertising sri lanka,									
+Leading e-Marketer in Sri Lanka. All kind of Email Marketing, Email Promotions, Advertising, 									
+e-marketing sri lanka, e marketing, business promotions, email marketing business promotions">
+
+<meta name="Description" content="		
+Best email marketing solution in sri lanka. 		
+		
+Welcome to enet lanka! 		
+The Sri Lanka's Leading E-Marketing Company. eNet Lanka is a young, 		
+spear headed multi-model internet Advertising company creating new revelations in the Internet advertising space in Sri 		
+Lanka and it is the most advanced and targeted solution for all kind of e-solutions catering to small medium businesses 		
+to enterprise level. 		
+		
+Email marketing is the latest trend in advertising media and the best way to promote your business, 		
+product or brand awareness locally or globally. It is very cost effective, faster and most efficient method to reach thousands 		
+in seconds. This is the only way to make new clients at instant and retain existing clients with a good rapport for a long term 		
+business and double your sales and profit day by day.		
+		
+Whether you want to target professionals, senior level people, students, 		
+individuals or even house wives, we have a well maintained database of leads. If you are targeting banks, telecommunication, 		
+automobile, hospitality sector, government sector or you name it, we got them all in our data base. eNet Lanka is the Best way to gain the Maximum publicity you Need">		
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+jQuery(document).ready(function(){
+	$('#contactform').submit(function(){				  
+		var action = $(this).attr('action');
+		$.post(action, { 
+			name: $('#name').val(),
+			email: $('#email').val(),
+			company: $('#company').val(),
+			subject: $('#subject').val(),
+			message: $('#message').val()
+		},
+			function(data){
+				$('#contactform #submit').attr('disabled','');
+				$('.response').remove();
+				$('#contactform').before('<p class="response">'+data+'</p>');
+				$('.response').slideDown();
+				if(data=='Message sent!') $('#contactform').slideUp();
+			}
+		); 
+		return false;
+	});
+});
+// ]]>
+</script>
+<style type="text/css">
+<!--
+.style1 {
+	color: #FF6600;
+	font-weight: bold;
+}
+.style5 {color: #FF9900}
+-->
+</style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35141260-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+<div class="main">
+  <div class="blok_header">
+    <div class="header">
+      <div class="logo"> <a href="index.html"><img src="images/logo.gif" width="349" height="98" border="0" alt="logo" class="one" /></a> </div>
+      <div class="galeria">
+        <p><a href="#" class="thre"></a> <a href="http://www.facebook.com/pages/eNet-Lanka/123764077660136" class="sek"><img src="images/spacer.gif" alt="pisture" width="24" height="23" border="0" /></a> <a href="#" class="first"></a> </p>
+      </div>
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="menu_resize_bg">
+    <div class="menu_resize">
+      <div class="menu">
+        <ul>
+          <li><a href="index.html" class="active"><span>Home </span></a></li>
+		  <li><a href="about.html"><span> About Us </span></a></li>
+          <li><a href="service.html"><span>Service</span></a></li>
+          <li><a href="pricing.html"><span>Pricing</span></a></li>          
+          <li><a href="contact.html"><span> Contact Us</span></a></li>
+        </ul>
+      </div>
+      <div class="search"></div>
+      <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="clr"></div>
+  <div class="body_resize">
+    <div class="body">
+      <h3>Contact Us</h3>
+      <div class="left">
+        <h2>Contact Form</h2>
+        <p>Please feel free to contact us at any time with questions or concerns.</p>
+        <div class="form">
+          <form action="contact.php" method="post" id="contactform">
+            <ol>
+              <li>
+                <label for="name">First Name <span class="red">*</span></label>
+                <input id="name" name="name" class="text" />
+              </li>
+              <li>
+                <label for="email">Your email <span class="red">*</span></label>
+                <input id="email" name="email" class="text" />
+              </li>
+              <li>
+                <label for="company">Company</label>
+                <input id="company" name="company" class="text" />
+              </li>
+              <li>
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" class="text" />
+              </li>
+              <li>
+                <label for="message">Message <span class="red">*</span></label>
+                <textarea id="message" name="message" rows="6" cols="50"></textarea>
+              </li>
+              <li class="buttons">
+                <input type="image" name="imageField" id="imageField" src="images/send.gif" class="send" />
+                <div class="clr"></div>
+              </li>
+            </ol>
+          </form>
+        </div>
+      </div>
+      <div class="right">
+        <h2>Get in touch!</h2>
+		<p><strong>We are ready to take your call.</strong><br />
+        <strong>Telephone</strong>:   +94 - 777 681 123 <br />
+		<br />
+		<strong>All email enquiries to us are guaranteed a response.</strong><br />
+        <strong>E-mail</strong>:           support@enetlanka.com <br />
+		<br />
+		<strong>Chat with us.</strong><br />
+		<strong>Skype</strong>: enetlanka <br /></p>
+		<p><span class="style1">Our normal hours of operation are from Monday through Friday, 9:00 AM to 5:00 PM , excluding Sri Lanka public holidays. </span><br />
+		</p>
+      
+   <!-- Begin MailChimp Signup Form -->
+<link href="./eNet Lanka - Sri Lanka Email Marketing Solution_files/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="http://enetlanka.us14.list-manage.com/subscribe/post?u=25a6d6432a1157724dff1fe4d&amp;id=dc7acbe332" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+    <div id="mc_embed_signup_scroll">
+	<h2>Subscribe to our mailing list</h2>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+	<label for="mce-FNAME">First Name </label>
+	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+</div>
+<div class="mc-field-group">
+	<label for="mce-LNAME">Last Name </label>
+	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_25a6d6432a1157724dff1fe4d_dc7acbe332" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      </div>
+      <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="FBG_blog">
+    <div class="FBG_blog_resize"> <a href="#"><img src="images/logo_body.gif" alt="pisture" width="144" height="62" border="0" /></a>
+      <div class="recent">
+        <h2>Welcome to eNet Lanka.</h2>
+      </div>
+      <div class="recent2">
+        <p>Reaching People, Revitalizing Customers.</p>
+      </div>
+      <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+  </div>
+</div>
+<div class="FBG">
+  <div class="FBG_resize">
+    <div class="left">
+      <h2>&nbsp;</h2>
+    </div>
+    <div class="left">
+      <h2>Customers</h2>
+      <ul>
+        <li><a href="#">McQuire Rens &amp; Jones (Pvt) Ltd</a></li>
+        <li><a href="#">Synergy School of Marketing</a></li>
+        <li><a href="#">HNB</a></li>
+        <li><a href="#">NetAssist International</a></li>
+        <li><a href="customers.html" class="style5">View More &gt;&gt;</a></li>
+      </ul>
+    </div>
+    <div class="left">
+      <h2>Recent E Mail Campaigns </h2>
+      <ul>
+        <li><a href="http://www.facebook.com/pages/eNet-Lanka/123764077660136" target="_blank">To view our recent email campaigns follow us on FaceBook</a></li>
+      </ul>
+    </div>
+    <div class="left">
+      <h2>More Links</h2>
+      <ul>
+        <li><a href="What_is_Email_Marketing.html">What is Email Marketing?</a></li>
+        <li><a href="How_Email_Marketing_Works.html">How Email Marketing Works</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="artwork.html">Artwork Design Guidelines</a></li>
+        <li><a href="tos.html">Terms &amp; Conditions</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="left">
+      <h2>Contact Us</h2>
+      <ul>
+        <li><a href="#"></a></li>
+        <li><a href="mailto:support@enetlanka.com">Email Support</a></li>
+        <li><a href="#">Phone: +94-777 681 123</a></li>
+        <li><a href="contact.html">Send Us Feedback</a></li>
+      </ul>
+    </div>
+    <div class="left">
+      <h2>&nbsp;</h2>
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="clr"></div>
+</div>
+<div class="footer">
+  <div class="footer_resize">
+    <p class="leftt">© Copyright eNet Lanka. All Rights Reserved. <a href="index.html">Home</a> | <a href="contact.html">Contact</a></p>
+    <p class="right"><a href="http://www.dreamtemplate.com"></a></p>
+    <div class="clr"></div>
+  </div>
+  <div class="clr"></div>
+</div>
+</body>
+</html>
